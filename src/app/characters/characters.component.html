@@ -1,5 +1,5 @@
 <div *ngIf="characters!=null; else espera">
-  <div *ngFor="let char of characters.characters" class="inlineBlock">
+  <div *ngFor="let char of characters.results" class="inlineBlock">
 
       <div class="card m-2" style="width: 18rem;">
         <img class="card-img-top" src="{{ char.image }}" alt="Imagen {{ char.name }}">

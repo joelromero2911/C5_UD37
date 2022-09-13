@@ -13,7 +13,7 @@ export class CharactersComponent implements OnInit {
   constructor( private http: HttpClient ) { }
 
   ngOnInit(): void {
-    this.http.get("assets/database.json")
+    this.http.get("https://rickandmortyapi.com/api/character")
     .subscribe(
       result => {
         this.characters = result;
